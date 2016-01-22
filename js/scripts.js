@@ -9,6 +9,16 @@ function myFunction() {
       if ((i % 3 === 0) && (i % 5 === 0)) {
         list += "<p>ping-pong</p>";
       }
+      else if (i % 5 === 0) {
+        list += "<p>ping</p>";
+      }
+      else if (i % 5 === 0) {
+        list += "<p>pong</p>";
+      else {
+        list += i;
+      }
+      list += "<li>";
+      }
     }
 }
 
