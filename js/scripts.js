@@ -22,9 +22,9 @@ $(document).ready(function() {
 
 //input
   var countTo = parseInt($("#countTo").val());
-  var userAnswer = count(countTo);
+  var answer = count(countTo);
 
-   $(".result").text(userAnswer);
+   $(".result").text(answer);
  event.preventDefault();
   });
 });
