@@ -1,58 +1,52 @@
-// Interface Logic
-var number = prompt("please enter a number between 1 and 100");
 //business logic
-if (number > 0 && number < 100) {
+var count = function(countTo) {
+  var countUp = [];
+   for (var i = 1; i <= countTo; i += 1){
+     if (i % 15 == 0) {
+      countUp.push("pingpong");
+   } else if (i % 5 == 0) {
+     countUp.push("pong");
+   } else if (i % 3 == 0) {
+      countUp.push("ping");
+   } else{
+      countUp.push(i);
+   }
+ }
+     return countUp;
 
-  for (i = 1; i <= number; i++) {
-    if (i % 3 === 0 && i % 5 == 0){
-      document.write("ping-pong");
-    } else if (i % 3 === 0){
-      document.write ("ping")
-    } else if (i % 5 === 0){
-      document.write("pong")
-    }
-      else {
-      document.write(i)
-    }
-      document.write("<br>")
-
-      // document.write("the number you entered, " + number + " is not a number between 1 and 100");
-    }
 }
 
+//user side
+$(document).ready(function() {
+  $("form#questions").submit(function(event){
+
+//input
+  var countTo = parseInt($("#countTo").val());
+  var userAnswer = count(countTo);
+
+   $(".result").text(userAnswer);
+ event.preventDefault();
+  });
+});
 
 
 
-// function myFunction() {
-//     var x = document.getElementById('pingpong');
-//     var number = x.elements[0].value;
-//     var list = "";
-//     var i;
-//     for (i = 1; i <= num; i++){
-//       list += "<li>";
-//       if ((i % 3 === 0) && (i % 5 === 0)) {
-//         list += "<p>ping-pong</p>";
-//       }
-//       else if (i % 5 === 0) {
-//         list += "<p>ping</p>";
-//       }
-//       else if (i % 5 === 0) {
-//         list += "<p>pong</p>";
+// // Interface Logic
+// var prompt = prompt("please enter a number between 1 and 100");
+// //business logic
+// if (prompt > 0 && prompt < 100) {
+//
+//   for (i = 1; i <= prompt; i++) {
+//     if (i % 3 === 0 && i % 5 == 0){
+//       document.write("ping-pong");
+//     } else if (i % 3 === 0){
+//       document.write ("ping")
+//     } else if (i % 5 === 0){
+//       document.write("pong")
+//     }
 //       else {
-//         list += i;
-//       }
-//       list += "<li>";
-//       }
+//       document.write(i)
+//     }
+//       document.write("<br>")
 //     }
 // }
-
-
-// $(document).ready(function() {
-//   $("form#pingpong").submit(function(event) {
-//
-//
-//     $("#result").text(finalresult);
-//     event.preventDefault();
-//   });
-//
-// });
