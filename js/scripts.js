@@ -30,24 +30,3 @@ $(document).ready(function() {
   });
 });
 
-
-
-// // Interface Logic
-// var prompt = prompt("please enter a number between 1 and 100");
-// //business logic
-// if (prompt > 0 && prompt < 100) {
-//
-//   for (i = 1; i <= prompt; i++) {
-//     if (i % 3 === 0 && i % 5 == 0){
-//       document.write("ping-pong");
-//     } else if (i % 3 === 0){
-//       document.write ("ping")
-//     } else if (i % 5 === 0){
-//       document.write("pong")
-//     }
-//       else {
-//       document.write(i)
-//     }
-//       document.write("<br>")
-//     }
-// }
