@@ -1,30 +1,30 @@
-# _{Ping Ponger}_
+# Ping Ponger
 
-#### _{Javascript aptitude test}, {1/22/16}_
+#### Javascript aptitude test 1/22/16
 
-#### By _**{lawton Browning}**_
+#### By lawton Browning
 
 ## Description
 
-_{this ping pong test calculates values of 3 and 5 and returns key words based on the result}_
+This classic javascript ping pong test calculates values of 3 and 5 and returns key words based on the result. It was written for an epicodus friday exam to demonstrate understanding of mocha and chai testing, javscript and for loops. 
 
 ## Setup/Installation Requirements
 
-_{run code online}_
+basic web browser
 
 ## Known Bugs
 
-_{exception/non number error is missing}_
+exception/non number check is missing, code can be reformatted for efficiency given time.
 
 ## Support and contact details
 
-_{contact me at lawton.a.browning@gmail.com}_
+contact me at lawton.a.browning@gmail.com
 
 ## Technologies Used
 
-_{Javascript}_
+HTML CSS Javascript mocha, chai testing
 
-### License
+
 
 *{Determine the license under which this application can be used.  See below for more details on licensing.}*
 
